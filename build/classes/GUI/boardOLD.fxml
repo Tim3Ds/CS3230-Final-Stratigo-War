@@ -1,0 +1,1066 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Rectangle?>
+
+<AnchorPane fx:id="AnchorPane" prefHeight="900.0" prefWidth="1440.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.Controller">
+   <children>
+      <SplitPane dividerPositions="0.29797979797979796" prefHeight="900.0" prefWidth="1440.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                <children>
+                  <ImageView fitHeight="898.0" fitWidth="130.0" layoutX="-6.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../images/BCside.png" />
+                     </image>
+                  </ImageView>
+                  <SplitPane dividerPositions="0.5" orientation="VERTICAL" prefHeight="898.0" prefWidth="305.0" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <items>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                           <children>
+                              <ImageView fitHeight="444.0" fitWidth="305.0" layoutX="0" pickOnBounds="true">
+                                 <image>
+                                    <Image url="@../images/BCtop.png" />
+                                 </image>
+                              </ImageView>
+                                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="440.0" layoutX="15.0" stroke="BLACK" strokeType="INSIDE" width="45.0" />
+                                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="440.0" layoutX="90.0" stroke="BLACK" strokeType="INSIDE" width="45.0" />
+                                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="440.0" layoutX="165.0" stroke="BLACK" strokeType="INSIDE" width="45.0" />
+                                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="440.0" layoutX="240.0" stroke="BLACK" strokeType="INSIDE" width="45.0" />
+                              <GridPane fx:id="P2Grid" layoutX="53.0" layoutY="177.0" prefHeight="444.0" prefWidth="303.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                </columnConstraints>
+                                <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                </rowConstraints>
+                                <children>
+                                    <ImageView fx:id="O2p0" fitHeight="65.0" fitWidth="105.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.hgrow="SOMETIMES" GridPane.rowIndex="0" GridPane.valignment="CENTER" GridPane.vgrow="SOMETIMES">
+                                       <image>
+                                          <Image url="@../images/empty.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fx:id="O2p1" fitHeight="65.0" fitWidth="105.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.hgrow="SOMETIMES" GridPane.rowIndex="1" GridPane.valignment="CENTER" GridPane.vgrow="SOMETIMES">
+                                       <image>
+                                          <Image url="@../images/empty.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fx:id="O2p2" fitHeight="65.0" fitWidth="105.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.hgrow="SOMETIMES" GridPane.rowIndex="2" GridPane.valignment="CENTER" GridPane.vgrow="SOMETIMES">
+                                       <image>
+                                          <Image url="@../images/empty.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fx:id="O2p3" fitHeight="65.0" fitWidth="105.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.hgrow="SOMETIMES" GridPane.rowIndex="3" GridPane.valignment="CENTER" GridPane.vgrow="SOMETIMES">
+                                       <image>
+                                          <Image url="@../images/empty.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fx:id="O2p4" fitHeight="65.0" fitWidth="105.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.hgrow="SOMETIMES" GridPane.rowIndex="4" GridPane.valignment="CENTER" GridPane.vgrow="SOMETIMES">
+                                       <image>
+                                          <Image url="@../images/empty.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fx:id="O2p5" fitHeight="65.0" fitWidth="105.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.hgrow="SOMETIMES" GridPane.rowIndex="5" GridPane.valignment="CENTER" GridPane.vgrow="SOMETIMES">
+                                       <image>
+                                          <Image url="@../images/empty.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fx:id="O2p6" fitHeight="65.0" fitWidth="105.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.hgrow="SOMETIMES" GridPane.rowIndex="6" GridPane.valignment="CENTER" GridPane.vgrow="SOMETIMES">
+                                       <image>
+                                          <Image url="@../images/empty.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fx:id="O2p7" fitHeight="65.0" fitWidth="105.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.hgrow="SOMETIMES" GridPane.rowIndex="7" GridPane.valignment="CENTER" GridPane.vgrow="SOMETIMES">
+                                       <image>
+                                          <Image url="@../images/empty.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fx:id="O2p8" fitHeight="65.0" fitWidth="105.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.hgrow="SOMETIMES" GridPane.rowIndex="8" GridPane.valignment="CENTER" GridPane.vgrow="SOMETIMES">
+                                       <image>
+                                          <Image url="@../images/empty.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fx:id="O2p9" fitHeight="65.0" fitWidth="105.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.hgrow="SOMETIMES" GridPane.rowIndex="9" GridPane.valignment="CENTER" GridPane.vgrow="SOMETIMES">
+                                       <image>
+                                          <Image url="@../images/empty.png" />
+                                       </image>
+                                    </ImageView>
+                                    
+                                    <ImageView fx:id="O2p10" fitHeight="65.0" fitWidth="105.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="SOMETIMES" GridPane.rowIndex="0" GridPane.valignment="CENTER" GridPane.vgrow="SOMETIMES">
+                                       <image>
+                                          <Image url="@../images/empty.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fx:id="O2p11" fitHeight="65.0" fitWidth="105.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="SOMETIMES" GridPane.rowIndex="1" GridPane.valignment="CENTER" GridPane.vgrow="SOMETIMES">
+                                       <image>
+                                          <Image url="@../images/empty.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fx:id="O2p12" fitHeight="65.0" fitWidth="105.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="SOMETIMES" GridPane.rowIndex="2" GridPane.valignment="CENTER" GridPane.vgrow="SOMETIMES">
+                                       <image>
+                                          <Image url="@../images/empty.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fx:id="O2p13" fitHeight="65.0" fitWidth="105.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="SOMETIMES" GridPane.rowIndex="3" GridPane.valignment="CENTER" GridPane.vgrow="SOMETIMES">
+                                       <image>
+                                          <Image url="@../images/empty.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fx:id="O2p14" fitHeight="65.0" fitWidth="105.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="SOMETIMES" GridPane.rowIndex="4" GridPane.valignment="CENTER" GridPane.vgrow="SOMETIMES">
+                                       <image>
+                                          <Image url="@../images/empty.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fx:id="O2p15" fitHeight="65.0" fitWidth="105.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="SOMETIMES" GridPane.rowIndex="5" GridPane.valignment="CENTER" GridPane.vgrow="SOMETIMES">
+                                       <image>
+                                          <Image url="@../images/empty.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fx:id="O2p16" fitHeight="65.0" fitWidth="105.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="SOMETIMES" GridPane.rowIndex="6" GridPane.valignment="CENTER" GridPane.vgrow="SOMETIMES">
+                                       <image>
+                                          <Image url="@../images/empty.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fx:id="O2p17" fitHeight="65.0" fitWidth="105.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="SOMETIMES" GridPane.rowIndex="7" GridPane.valignment="CENTER" GridPane.vgrow="SOMETIMES">
+                                       <image>
+                                          <Image url="@../images/empty.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fx:id="O2p18" fitHeight="65.0" fitWidth="105.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="SOMETIMES" GridPane.rowIndex="8" GridPane.valignment="CENTER" GridPane.vgrow="SOMETIMES">
+                                       <image>
+                                          <Image url="@../images/empty.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fx:id="O2p19" fitHeight="65.0" fitWidth="105.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="SOMETIMES" GridPane.rowIndex="9" GridPane.valignment="CENTER" GridPane.vgrow="SOMETIMES">
+                                       <image>
+                                          <Image url="@../images/empty.png" />
+                                       </image>
+                                    </ImageView>
+                                    
+                                    <ImageView fx:id="O2p20" fitHeight="65.0" fitWidth="105.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.hgrow="SOMETIMES" GridPane.rowIndex="0" GridPane.valignment="CENTER" GridPane.vgrow="SOMETIMES">
+                                       <image>
+                                          <Image url="@../images/empty.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fx:id="O2p21" fitHeight="65.0" fitWidth="105.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.hgrow="SOMETIMES" GridPane.rowIndex="1" GridPane.valignment="CENTER" GridPane.vgrow="SOMETIMES">
+                                       <image>
+                                          <Image url="@../images/empty.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fx:id="O2p22" fitHeight="65.0" fitWidth="105.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.hgrow="SOMETIMES" GridPane.rowIndex="2" GridPane.valignment="CENTER" GridPane.vgrow="SOMETIMES">
+                                       <image>
+                                          <Image url="@../images/empty.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fx:id="O2p23" fitHeight="65.0" fitWidth="105.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.hgrow="SOMETIMES" GridPane.rowIndex="3" GridPane.valignment="CENTER" GridPane.vgrow="SOMETIMES">
+                                       <image>
+                                          <Image url="@../images/empty.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fx:id="O2p24" fitHeight="65.0" fitWidth="105.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.hgrow="SOMETIMES" GridPane.rowIndex="4" GridPane.valignment="CENTER" GridPane.vgrow="SOMETIMES">
+                                       <image>
+                                          <Image url="@../images/empty.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fx:id="O2p25" fitHeight="65.0" fitWidth="105.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.hgrow="SOMETIMES" GridPane.rowIndex="5" GridPane.valignment="CENTER" GridPane.vgrow="SOMETIMES">
+                                       <image>
+                                          <Image url="@../images/empty.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fx:id="O2p26" fitHeight="65.0" fitWidth="105.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.hgrow="SOMETIMES" GridPane.rowIndex="6" GridPane.valignment="CENTER" GridPane.vgrow="SOMETIMES">
+                                       <image>
+                                          <Image url="@../images/empty.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fx:id="O2p27" fitHeight="65.0" fitWidth="105.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.hgrow="SOMETIMES" GridPane.rowIndex="7" GridPane.valignment="CENTER" GridPane.vgrow="SOMETIMES">
+                                       <image>
+                                          <Image url="@../images/empty.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fx:id="O2p28" fitHeight="65.0" fitWidth="105.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.hgrow="SOMETIMES" GridPane.rowIndex="8" GridPane.valignment="CENTER" GridPane.vgrow="SOMETIMES">
+                                       <image>
+                                          <Image url="@../images/empty.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fx:id="O2p29" fitHeight="65.0" fitWidth="105.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.hgrow="SOMETIMES" GridPane.rowIndex="9" GridPane.valignment="CENTER" GridPane.vgrow="SOMETIMES">
+                                       <image>
+                                          <Image url="@../images/empty.png" />
+                                       </image>
+                                    </ImageView>
+                                    
+                                    <ImageView fx:id="O2p30" fitHeight="65.0" fitWidth="105.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.hgrow="SOMETIMES" GridPane.rowIndex="0" GridPane.valignment="CENTER" GridPane.vgrow="SOMETIMES">
+                                       <image>
+                                          <Image url="@../images/empty.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fx:id="O2p31" fitHeight="65.0" fitWidth="105.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.hgrow="SOMETIMES" GridPane.rowIndex="1" GridPane.valignment="CENTER" GridPane.vgrow="SOMETIMES">
+                                       <image>
+                                          <Image url="@../images/empty.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fx:id="O2p32" fitHeight="65.0" fitWidth="105.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.hgrow="SOMETIMES" GridPane.rowIndex="2" GridPane.valignment="CENTER" GridPane.vgrow="SOMETIMES">
+                                       <image>
+                                          <Image url="@../images/empty.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fx:id="O2p33" fitHeight="65.0" fitWidth="105.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.hgrow="SOMETIMES" GridPane.rowIndex="3" GridPane.valignment="CENTER" GridPane.vgrow="SOMETIMES">
+                                       <image>
+                                          <Image url="@../images/empty.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fx:id="O2p34" fitHeight="65.0" fitWidth="105.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.hgrow="SOMETIMES" GridPane.rowIndex="4" GridPane.valignment="CENTER" GridPane.vgrow="SOMETIMES">
+                                       <image>
+                                          <Image url="@../images/empty.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fx:id="O2p35" fitHeight="65.0" fitWidth="105.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.hgrow="SOMETIMES" GridPane.rowIndex="5" GridPane.valignment="CENTER" GridPane.vgrow="SOMETIMES">
+                                       <image>
+                                          <Image url="@../images/empty.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fx:id="O2p36" fitHeight="65.0" fitWidth="105.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.hgrow="SOMETIMES" GridPane.rowIndex="6" GridPane.valignment="CENTER" GridPane.vgrow="SOMETIMES">
+                                       <image>
+                                          <Image url="@../images/empty.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fx:id="O2p37" fitHeight="65.0" fitWidth="105.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.hgrow="SOMETIMES" GridPane.rowIndex="7" GridPane.valignment="CENTER" GridPane.vgrow="SOMETIMES">
+                                       <image>
+                                          <Image url="@../images/empty.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fx:id="O2p38" fitHeight="65.0" fitWidth="105.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.hgrow="SOMETIMES" GridPane.rowIndex="8" GridPane.valignment="CENTER" GridPane.vgrow="SOMETIMES">
+                                       <image>
+                                          <Image url="@../images/empty.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fx:id="O2p39" fitHeight="65.0" fitWidth="105.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.hgrow="SOMETIMES" GridPane.rowIndex="9" GridPane.valignment="CENTER" GridPane.vgrow="SOMETIMES">
+                                       <image>
+                                          <Image url="@../images/empty.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </GridPane>
+                        </children>
+                      </AnchorPane>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                          <children>
+                              <ImageView fitHeight="444.0" fitWidth="305.0" layoutX="0" pickOnBounds="true">
+                                 <image>
+                                    <Image url="@../images/BCbot.png" />
+                                 </image>
+                              </ImageView>
+                                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff2d1f" height="440.0" layoutX="15.0" layoutY="4.0" stroke="BLACK" strokeType="INSIDE" width="45.0" />
+                                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff2d1f" height="440.0" layoutX="90.0" layoutY="4.0" stroke="BLACK" strokeType="INSIDE" width="45.0" />
+                                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff2d1f" height="440.0" layoutX="165.0" layoutY="4.0" stroke="BLACK" strokeType="INSIDE" width="45.0" />
+                                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff2d1f" height="440.0" layoutX="240.0" layoutY="4.0" stroke="BLACK" strokeType="INSIDE" width="45.0" />
+                                <GridPane fx:id="P1Grid" layoutX="53.0" layoutY="177.0" prefHeight="444.0" prefWidth="303.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                </columnConstraints>
+                                <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                </rowConstraints>
+                                  <children>
+                                    <ImageView fx:id="O1p0" fitHeight="65.0" fitWidth="105.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.hgrow="SOMETIMES" GridPane.rowIndex="0" GridPane.valignment="CENTER" GridPane.vgrow="SOMETIMES">
+                                       <image>
+                                          <Image url="@../images/empty.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fx:id="O1p1" fitHeight="65.0" fitWidth="105.0" nodeOrientation="INHERIT"  pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.hgrow="SOMETIMES" GridPane.rowIndex="1" GridPane.valignment="CENTER" GridPane.vgrow="SOMETIMES">
+                                       <image>
+                                          <Image url="@../images/empty.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fx:id="O1p2" fitHeight="65.0" fitWidth="105.0" nodeOrientation="INHERIT"  pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.hgrow="SOMETIMES" GridPane.rowIndex="2" GridPane.valignment="CENTER" GridPane.vgrow="SOMETIMES">
+                                       <image>
+                                          <Image url="@../images/empty.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fx:id="O1p3" fitHeight="65.0" fitWidth="105.0" nodeOrientation="INHERIT"  pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.hgrow="SOMETIMES" GridPane.rowIndex="3" GridPane.valignment="CENTER" GridPane.vgrow="SOMETIMES">
+                                       <image>
+                                          <Image url="@../images/empty.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fx:id="O1p4" fitHeight="65.0" fitWidth="105.0" nodeOrientation="INHERIT"  pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.hgrow="SOMETIMES" GridPane.rowIndex="4" GridPane.valignment="CENTER" GridPane.vgrow="SOMETIMES">
+                                       <image>
+                                          <Image url="@../images/empty.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fx:id="O1p5" fitHeight="65.0" fitWidth="105.0" nodeOrientation="INHERIT"  pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.hgrow="SOMETIMES" GridPane.rowIndex="5" GridPane.valignment="CENTER" GridPane.vgrow="SOMETIMES">
+                                       <image>
+                                          <Image url="@../images/empty.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fx:id="O1p6" fitHeight="65.0" fitWidth="105.0" nodeOrientation="INHERIT"  pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.hgrow="SOMETIMES" GridPane.rowIndex="6" GridPane.valignment="CENTER" GridPane.vgrow="SOMETIMES">
+                                       <image>
+                                          <Image url="@../images/empty.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fx:id="O1p7" fitHeight="65.0" fitWidth="105.0" nodeOrientation="INHERIT"  pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.hgrow="SOMETIMES" GridPane.rowIndex="7" GridPane.valignment="CENTER" GridPane.vgrow="SOMETIMES">
+                                       <image>
+                                          <Image url="@../images/empty.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fx:id="O1p8" fitHeight="65.0" fitWidth="105.0" nodeOrientation="INHERIT"  pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.hgrow="SOMETIMES" GridPane.rowIndex="8" GridPane.valignment="CENTER" GridPane.vgrow="SOMETIMES">
+                                       <image>
+                                          <Image url="@../images/empty.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fx:id="O1p9" fitHeight="65.0" fitWidth="105.0" nodeOrientation="INHERIT"  pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.hgrow="SOMETIMES" GridPane.rowIndex="9" GridPane.valignment="CENTER" GridPane.vgrow="SOMETIMES">
+                                       <image>
+                                          <Image url="@../images/empty.png" />
+                                       </image>
+                                    </ImageView>
+                                    
+                                    <ImageView fx:id="O1p10" fitHeight="65.0" fitWidth="105.0" nodeOrientation="INHERIT"  pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="SOMETIMES" GridPane.rowIndex="0" GridPane.valignment="CENTER" GridPane.vgrow="SOMETIMES">
+                                       <image>
+                                          <Image url="@../images/empty.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fx:id="O1p11" fitHeight="65.0" fitWidth="105.0" nodeOrientation="INHERIT"  pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="SOMETIMES" GridPane.rowIndex="1" GridPane.valignment="CENTER" GridPane.vgrow="SOMETIMES">
+                                       <image>
+                                          <Image url="@../images/empty.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fx:id="O1p12" fitHeight="65.0" fitWidth="105.0" nodeOrientation="INHERIT"  pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="SOMETIMES" GridPane.rowIndex="2" GridPane.valignment="CENTER" GridPane.vgrow="SOMETIMES">
+                                       <image>
+                                          <Image url="@../images/empty.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fx:id="O1p13" fitHeight="65.0" fitWidth="105.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="SOMETIMES" GridPane.rowIndex="3" GridPane.valignment="CENTER" GridPane.vgrow="SOMETIMES">
+                                       <image>
+                                          <Image url="@../images/empty.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fx:id="O1p14" fitHeight="65.0" fitWidth="105.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="SOMETIMES" GridPane.rowIndex="4" GridPane.valignment="CENTER" GridPane.vgrow="SOMETIMES">
+                                       <image>
+                                          <Image url="@../images/empty.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fx:id="O1p15" fitHeight="65.0" fitWidth="105.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="SOMETIMES" GridPane.rowIndex="5" GridPane.valignment="CENTER" GridPane.vgrow="SOMETIMES">
+                                       <image>
+                                          <Image url="@../images/empty.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fx:id="O1p16" fitHeight="65.0" fitWidth="105.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="SOMETIMES" GridPane.rowIndex="6" GridPane.valignment="CENTER" GridPane.vgrow="SOMETIMES">
+                                       <image>
+                                          <Image url="@../images/empty.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fx:id="O1p17" fitHeight="65.0" fitWidth="105.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="SOMETIMES" GridPane.rowIndex="7" GridPane.valignment="CENTER" GridPane.vgrow="SOMETIMES">
+                                       <image>
+                                          <Image url="@../images/empty.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fx:id="O1p18" fitHeight="65.0" fitWidth="105.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="SOMETIMES" GridPane.rowIndex="8" GridPane.valignment="CENTER" GridPane.vgrow="SOMETIMES">
+                                       <image>
+                                          <Image url="@../images/empty.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fx:id="O1p19" fitHeight="65.0" fitWidth="105.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="SOMETIMES" GridPane.rowIndex="9" GridPane.valignment="CENTER" GridPane.vgrow="SOMETIMES">
+                                       <image>
+                                          <Image url="@../images/empty.png" />
+                                       </image>
+                                    </ImageView>
+                                    
+                                    <ImageView fx:id="O1p20" fitHeight="65.0" fitWidth="105.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.hgrow="SOMETIMES" GridPane.rowIndex="0" GridPane.valignment="CENTER" GridPane.vgrow="SOMETIMES">
+                                       <image>
+                                          <Image url="@../images/empty.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fx:id="O1p21" fitHeight="65.0" fitWidth="105.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.hgrow="SOMETIMES" GridPane.rowIndex="1" GridPane.valignment="CENTER" GridPane.vgrow="SOMETIMES">
+                                       <image>
+                                          <Image url="@../images/empty.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fx:id="O1p22" fitHeight="65.0" fitWidth="105.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.hgrow="SOMETIMES" GridPane.rowIndex="2" GridPane.valignment="CENTER" GridPane.vgrow="SOMETIMES">
+                                       <image>
+                                          <Image url="@../images/empty.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fx:id="O1p23" fitHeight="65.0" fitWidth="105.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.hgrow="SOMETIMES" GridPane.rowIndex="3" GridPane.valignment="CENTER" GridPane.vgrow="SOMETIMES">
+                                       <image>
+                                          <Image url="@../images/empty.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fx:id="O1p24" fitHeight="65.0" fitWidth="105.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.hgrow="SOMETIMES" GridPane.rowIndex="4" GridPane.valignment="CENTER" GridPane.vgrow="SOMETIMES">
+                                       <image>
+                                          <Image url="@../images/empty.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fx:id="O1p25" fitHeight="65.0" fitWidth="105.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.hgrow="SOMETIMES" GridPane.rowIndex="5" GridPane.valignment="CENTER" GridPane.vgrow="SOMETIMES">
+                                       <image>
+                                          <Image url="@../images/empty.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fx:id="O1p26" fitHeight="65.0" fitWidth="105.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.hgrow="SOMETIMES" GridPane.rowIndex="6" GridPane.valignment="CENTER" GridPane.vgrow="SOMETIMES">
+                                       <image>
+                                          <Image url="@../images/empty.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fx:id="O1p27" fitHeight="65.0" fitWidth="105.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.hgrow="SOMETIMES" GridPane.rowIndex="7" GridPane.valignment="CENTER" GridPane.vgrow="SOMETIMES">
+                                       <image>
+                                          <Image url="@../images/empty.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fx:id="O1p28" fitHeight="65.0" fitWidth="105.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.hgrow="SOMETIMES" GridPane.rowIndex="8" GridPane.valignment="CENTER" GridPane.vgrow="SOMETIMES">
+                                       <image>
+                                          <Image url="@../images/empty.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fx:id="O1p29" fitHeight="65.0" fitWidth="105.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.hgrow="SOMETIMES" GridPane.rowIndex="9" GridPane.valignment="CENTER" GridPane.vgrow="SOMETIMES">
+                                       <image>
+                                          <Image url="@../images/empty.png" />
+                                       </image>
+                                    </ImageView>
+                                    
+                                    <ImageView fx:id="O1p30" fitHeight="65.0" fitWidth="105.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.hgrow="SOMETIMES" GridPane.rowIndex="0" GridPane.valignment="CENTER" GridPane.vgrow="SOMETIMES">
+                                       <image>
+                                          <Image url="@../images/empty.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fx:id="O1p31" fitHeight="65.0" fitWidth="105.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.hgrow="SOMETIMES" GridPane.rowIndex="1" GridPane.valignment="CENTER" GridPane.vgrow="SOMETIMES">
+                                       <image>
+                                          <Image url="@../images/empty.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fx:id="O1p32" fitHeight="65.0" fitWidth="105.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.hgrow="SOMETIMES" GridPane.rowIndex="2" GridPane.valignment="CENTER" GridPane.vgrow="SOMETIMES">
+                                       <image>
+                                          <Image url="@../images/empty.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fx:id="O1p33" fitHeight="65.0" fitWidth="105.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.hgrow="SOMETIMES" GridPane.rowIndex="3" GridPane.valignment="CENTER" GridPane.vgrow="SOMETIMES">
+                                       <image>
+                                          <Image url="@../images/empty.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fx:id="O1p34" fitHeight="65.0" fitWidth="105.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.hgrow="SOMETIMES" GridPane.rowIndex="4" GridPane.valignment="CENTER" GridPane.vgrow="SOMETIMES">
+                                       <image>
+                                          <Image url="@../images/empty.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fx:id="O1p35" fitHeight="65.0" fitWidth="105.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.hgrow="SOMETIMES" GridPane.rowIndex="5" GridPane.valignment="CENTER" GridPane.vgrow="SOMETIMES">
+                                       <image>
+                                          <Image url="@../images/empty.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fx:id="O1p36" fitHeight="65.0" fitWidth="105.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.hgrow="SOMETIMES" GridPane.rowIndex="6" GridPane.valignment="CENTER" GridPane.vgrow="SOMETIMES">
+                                       <image>
+                                          <Image url="@../images/empty.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fx:id="O1p37" fitHeight="65.0" fitWidth="105.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.hgrow="SOMETIMES" GridPane.rowIndex="7" GridPane.valignment="CENTER" GridPane.vgrow="SOMETIMES">
+                                       <image>
+                                          <Image url="@../images/empty.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fx:id="O1p38" fitHeight="65.0" fitWidth="105.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.hgrow="SOMETIMES" GridPane.rowIndex="8" GridPane.valignment="CENTER" GridPane.vgrow="SOMETIMES">
+                                       <image>
+                                          <Image url="@../images/empty.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fx:id="O1p39" fitHeight="65.0" fitWidth="105.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.hgrow="SOMETIMES" GridPane.rowIndex="9" GridPane.valignment="CENTER" GridPane.vgrow="SOMETIMES">
+                                       <image>
+                                          <Image url="@../images/empty.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </GridPane>
+                          </children>
+                      </AnchorPane>
+                    </items>
+                  </SplitPane>
+                  <Label fx:id="Player1" layoutX="33.0" layoutY="464.0" text="Player 1" textAlignment="CENTER" />
+                  <Label fx:id="Player2" layoutX="33.0" layoutY="14.0" text="Player 2" textAlignment="CENTER" />
+                  <Button fx:id="credits" layoutX="29.0" layoutY="846.0" mnemonicParsing="false" onAction="#credits" text="Credits" />
+                  <Button fx:id="goToSettings" layoutX="26.0" layoutY="799.0" mnemonicParsing="false" onAction="#goToSettings" text="Settings" />
+                  <Label fx:id="statsP2" layoutX="41.0" layoutY="69.0" text="Stats" />
+                  <Label fx:id="statsP1" layoutX="41.0" layoutY="529.0" text="Stats" />
+                  <Button fx:id="goToGame" layoutY="752.0" mnemonicParsing="false" onAction="#RefreshBoard" text="Refresh Screen" />
+                  <Label alignment="CENTER" layoutX="40.0" layoutY="204.0" style="-fx-background-color: white;" text="Turn">
+                     <effect>
+                        <Bloom />
+                     </effect>
+                  </Label>
+                  
+               </children>
+            </AnchorPane>
+          <AnchorPane prefHeight="900.0" prefWidth="900.0">
+               <children>
+                  <ImageView fitHeight="898.0" fitWidth="1006.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../images/background.png" />
+                     </image>
+                  </ImageView>
+                  <GridPane fx:id="boardGrid" alignment="CENTER" gridLinesVisible="true" style="-fx-border-style: dashed; -fx-border-color: tan;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <padding>
+                        <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                     </padding>
+                     <children>
+                        <ImageView fx:id="b0" fitHeight="90.0" fitWidth="100.0" onMouseDragged="#mouseEntered" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="0" GridPane.rowIndex="0">
+                           <image>
+                              <Image url="@../images/empty.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="b1" fitHeight="90.0" fitWidth="100.0" onMouseClicked="#mouseEntered" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="0" GridPane.rowIndex="1">
+                           <image>
+                              <Image url="@../images/empty.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="b2" fitHeight="90.0" fitWidth="100.0" onMouseClicked="#mouseEntered" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="0" GridPane.rowIndex="2">
+                           <image>
+                              <Image url="@../images/empty.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="b3" fitHeight="90.0" fitWidth="100.0" onMouseClicked="#mouseEntered" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="0" GridPane.rowIndex="3">
+                           <image>
+                              <Image url="@../images/empty.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="b4" fitHeight="90.0" fitWidth="100.0" onMouseClicked="#mouseEntered" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="0" GridPane.rowIndex="4">
+                           <image>
+                              <Image url="@../images/empty.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="b5" fitHeight="90.0" fitWidth="100.0" onMouseClicked="#mouseEntered" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="0" GridPane.rowIndex="5">
+                           <image>
+                              <Image url="@../images/empty.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="b6" fitHeight="90.0" fitWidth="100.0" onMouseClicked="#mouseEntered" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="0" GridPane.rowIndex="6">
+                           <image>
+                              <Image url="@../images/empty.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="b7" fitHeight="90.0" fitWidth="100.0" onMouseClicked="#mouseEntered" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="0" GridPane.rowIndex="7">
+                           <image>
+                              <Image url="@../images/empty.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="b8" fitHeight="90.0" fitWidth="100.0" onMouseClicked="#mouseEntered" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="0" GridPane.rowIndex="8">
+                           <image>
+                              <Image url="@../images/empty.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="b9" fitHeight="90.0" fitWidth="100.0" onMouseClicked="#mouseEntered" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="0" GridPane.rowIndex="9">
+                           <image>
+                              <Image url="@../images/empty.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="b10" fitHeight="90.0" fitWidth="100.0" onMouseClicked="#mouseEntered" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="0">
+                           <image>
+                              <Image url="@../images/empty.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="b11" fitHeight="90.0" fitWidth="100.0" onMouseClicked="#mouseEntered" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <image>
+                              <Image url="@../images/empty.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="b12" fitHeight="90.0" fitWidth="100.0" onMouseClicked="#mouseEntered" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                           <image>
+                              <Image url="@../images/empty.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="b13" fitHeight="90.0" fitWidth="100.0" onMouseClicked="#mouseEntered" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                           <image>
+                              <Image url="@../images/empty.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="b14" fitHeight="90.0" fitWidth="100.0" onMouseClicked="#mouseEntered" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                           <image>
+                              <Image url="@../images/empty.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="b15" fitHeight="90.0" fitWidth="100.0" onMouseClicked="#mouseEntered" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                           <image>
+                              <Image url="@../images/empty.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="b16" fitHeight="90.0" fitWidth="100.0" onMouseClicked="#mouseEntered" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="6">
+                           <image>
+                              <Image url="@../images/empty.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="b17" fitHeight="90.0" fitWidth="100.0" onMouseClicked="#mouseEntered" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="7">
+                           <image>
+                              <Image url="@../images/empty.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="b18" fitHeight="90.0" fitWidth="100.0" onMouseClicked="#mouseEntered" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="8">
+                           <image>
+                              <Image url="@../images/empty.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="b19" fitHeight="90.0" fitWidth="100.0" onMouseClicked="#mouseEntered" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="9">
+                           <image>
+                              <Image url="@../images/empty.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="b20" fitHeight="90.0" fitWidth="100.0" onMouseClicked="#mouseEntered" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="0">
+                           <image>
+                              <Image url="@../images/empty.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="b21" fitHeight="90.0" fitWidth="100.0" onMouseClicked="#mouseEntered" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                           <image>
+                              <Image url="@../images/empty.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="b22" fitHeight="90.0" fitWidth="100.0" onMouseClicked="#mouseEntered" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                           <image>
+                              <Image url="@../images/empty.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="b23" fitHeight="90.0" fitWidth="100.0" onMouseClicked="#mouseEntered" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                           <image>
+                              <Image url="@../images/empty.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="b24" fitHeight="90.0" fitWidth="100.0" onMouseClicked="#mouseEntered" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="4">
+                           <image>
+                              <Image url="@../images/NoMansLand.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="b25" fitHeight="90.0" fitWidth="100.0" onMouseClicked="#mouseEntered" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="5">
+                           <image>
+                              <Image url="@../images/NoMansLand.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="b26" fitHeight="90.0" fitWidth="100.0" onMouseClicked="#mouseEntered" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="6">
+                           <image>
+                              <Image url="@../images/empty.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="b27" fitHeight="90.0" fitWidth="100.0" onMouseClicked="#mouseEntered" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="7">
+                           <image>
+                              <Image url="@../images/empty.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="b28" fitHeight="90.0" fitWidth="100.0" onMouseClicked="#mouseEntered" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="8">
+                           <image>
+                              <Image url="@../images/empty.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="b29" fitHeight="90.0" fitWidth="100.0" onMouseClicked="#mouseEntered" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="9">
+                           <image>
+                              <Image url="@../images/empty.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="b30" fitHeight="90.0" fitWidth="100.0" onMouseClicked="#mouseEntered" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="0">
+                           <image>
+                              <Image url="@../images/empty.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="b31" fitHeight="90.0" fitWidth="100.0" onMouseClicked="#mouseEntered" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                           <image>
+                              <Image url="@../images/empty.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="b32" fitHeight="90.0" fitWidth="100.0" onMouseClicked="#mouseEntered" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                           <image>
+                              <Image url="@../images/empty.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="b33" fitHeight="90.0" fitWidth="100.0" onMouseClicked="#mouseEntered" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="3">
+                           <image>
+                              <Image url="@../images/empty.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="b34" fitHeight="90.0" fitWidth="100.0" onMouseClicked="#mouseEntered" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="4">
+                           <image>
+                              <Image url="@../images/NoMansLand.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="b35" fitHeight="90.0" fitWidth="100.0" onMouseClicked="#mouseEntered" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="5">
+                           <image>
+                              <Image url="@../images/NoMansLand.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="b36" fitHeight="90.0" fitWidth="100.0" onMouseClicked="#mouseEntered" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="6">
+                           <image>
+                              <Image url="@../images/empty.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="b37" fitHeight="90.0" fitWidth="100.0" onMouseClicked="#mouseEntered" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="7">
+                           <image>
+                              <Image url="@../images/empty.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="b38" fitHeight="90.0" fitWidth="100.0" onMouseClicked="#mouseEntered" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="8">
+                           <image>
+                              <Image url="@../images/empty.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="b39" fitHeight="90.0" fitWidth="100.0" onMouseClicked="#mouseEntered" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="9">
+                           <image>
+                              <Image url="@../images/empty.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="b40" fitHeight="90.0" fitWidth="100.0" onMouseClicked="#mouseEntered" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="0">
+                           <image>
+                              <Image url="@../images/empty.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="b41" fitHeight="90.0" fitWidth="100.0" onMouseClicked="#mouseEntered" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="1">
+                           <image>
+                              <Image url="@../images/empty.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="b42" fitHeight="90.0" fitWidth="100.0" onMouseClicked="#mouseEntered" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="2">
+                           <image>
+                              <Image url="@../images/empty.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="b43" fitHeight="90.0" fitWidth="100.0" onMouseClicked="#mouseEntered" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="3">
+                           <image>
+                              <Image url="@../images/empty.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="b44" fitHeight="90.0" fitWidth="100.0" onMouseClicked="#mouseEntered" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="4">
+                           <image>
+                              <Image url="@../images/empty.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="b45" fitHeight="90.0" fitWidth="100.0" onMouseClicked="#mouseEntered" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="5">
+                           <image>
+                              <Image url="@../images/empty.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="b46" fitHeight="90.0" fitWidth="100.0" onMouseClicked="#mouseEntered" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="6">
+                           <image>
+                              <Image url="@../images/empty.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="b47" fitHeight="90.0" fitWidth="100.0" onMouseClicked="#mouseEntered" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="7">
+                           <image>
+                              <Image url="@../images/empty.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="b48" fitHeight="90.0" fitWidth="100.0" onMouseClicked="#mouseEntered" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="8">
+                           <image>
+                              <Image url="@../images/empty.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="b49" fitHeight="90.0" fitWidth="100.0" onMouseClicked="#mouseEntered" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="9">
+                           <image>
+                              <Image url="@../images/empty.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="b50" fitHeight="90.0" fitWidth="100.0" onMouseClicked="#mouseEntered" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="0">
+                           <image>
+                              <Image url="@../images/empty.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="b51" fitHeight="90.0" fitWidth="100.0" onMouseClicked="#mouseEntered" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="1">
+                           <image>
+                              <Image url="@../images/empty.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="b52" fitHeight="90.0" fitWidth="100.0" onMouseClicked="#mouseEntered" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="2">
+                           <image>
+                              <Image url="@../images/empty.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="b53" fitHeight="90.0" fitWidth="100.0" onMouseClicked="#mouseEntered" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="3">
+                           <image>
+                              <Image url="@../images/empty.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="b54" fitHeight="90.0" fitWidth="100.0" onMouseClicked="#mouseEntered" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="4">
+                           <image>
+                              <Image url="@../images/empty.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="b55" fitHeight="90.0" fitWidth="100.0" onMouseClicked="#mouseEntered" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="5">
+                           <image>
+                              <Image url="@../images/empty.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="b56" fitHeight="90.0" fitWidth="100.0" onMouseClicked="#mouseEntered" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="6">
+                           <image>
+                              <Image url="@../images/empty.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="b57" fitHeight="90.0" fitWidth="100.0" onMouseClicked="#mouseEntered" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="7">
+                           <image>
+                              <Image url="@../images/empty.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="b58" fitHeight="90.0" fitWidth="100.0" onMouseClicked="#mouseEntered" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="8">
+                           <image>
+                              <Image url="@../images/empty.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="b59" fitHeight="90.0" fitWidth="100.0" onMouseClicked="#mouseEntered" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="9">
+                           <image>
+                              <Image url="@../images/empty.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="b60" fitHeight="90.0" fitWidth="100.0" onMouseClicked="#mouseEntered" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="0">
+                           <image>
+                              <Image url="@../images/empty.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="b61" fitHeight="90.0" fitWidth="100.0" onMouseClicked="#mouseEntered" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="1">
+                           <image>
+                              <Image url="@../images/empty.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="b62" fitHeight="90.0" fitWidth="100.0" onMouseClicked="#mouseEntered" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="2">
+                           <image>
+                              <Image url="@../images/empty.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="b63" fitHeight="90.0" fitWidth="100.0" onMouseClicked="#mouseEntered" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="3">
+                           <image>
+                              <Image url="@../images/empty.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="b64" fitHeight="90.0" fitWidth="100.0" onMouseClicked="#mouseEntered" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="4">
+                           <image>
+                              <Image url="@../images/NoMansLand.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="b65" fitHeight="90.0" fitWidth="100.0" onMouseClicked="#mouseEntered" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="5">
+                           <image>
+                              <Image url="@../images/NoMansLand.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="b66" fitHeight="90.0" fitWidth="100.0" onMouseClicked="#mouseEntered" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="6">
+                           <image>
+                              <Image url="@../images/empty.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="b67" fitHeight="90.0" fitWidth="100.0" onMouseClicked="#mouseEntered" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="7">
+                           <image>
+                              <Image url="@../images/empty.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="b68" fitHeight="90.0" fitWidth="100.0" onMouseClicked="#mouseEntered" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="8">
+                           <image>
+                              <Image url="@../images/empty.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="b69" fitHeight="90.0" fitWidth="100.0" onMouseClicked="#mouseEntered" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="9">
+                           <image>
+                              <Image url="@../images/empty.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="b70" fitHeight="90.0" fitWidth="100.0" onMouseClicked="#mouseEntered" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.rowIndex="0">
+                           <image>
+                              <Image url="@../images/empty.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="b71" fitHeight="90.0" fitWidth="100.0" onMouseClicked="#mouseEntered" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.rowIndex="1">
+                           <image>
+                              <Image url="@../images/empty.png" />
+                           </image>
+                        </ImageView>
+                        
+                        <ImageView fx:id="b72" fitHeight="90.0" fitWidth="100.0" onMouseClicked="#mouseEntered" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.rowIndex="2">
+                           <image>
+                              <Image url="@../images/empty.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="b73" fitHeight="90.0" fitWidth="100.0" onMouseClicked="#mouseEntered" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.rowIndex="3">
+                           <image>
+                              <Image url="@../images/empty.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="b74" fitHeight="90.0" fitWidth="100.0" onMouseClicked="#mouseEntered" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.rowIndex="4">
+                           <image>
+                              <Image url="@../images/NoMansLand.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="b75" fitHeight="90.0" fitWidth="100.0" onMouseClicked="#mouseEntered" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.rowIndex="5">
+                           <image>
+                              <Image url="@../images/NoMansLand.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="b76" fitHeight="90.0" fitWidth="100.0" onMouseClicked="#mouseEntered" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.rowIndex="6">
+                           <image>
+                              <Image url="@../images/empty.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="b77" fitHeight="90.0" fitWidth="100.0" onMouseClicked="#mouseEntered" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.rowIndex="7">
+                           <image>
+                              <Image url="@../images/empty.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="b78" fitHeight="90.0" fitWidth="100.0" onMouseClicked="#mouseEntered" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.rowIndex="8">
+                           <image>
+                              <Image url="@../images/empty.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="b79" fitHeight="90.0" fitWidth="100.0" onMouseClicked="#mouseEntered" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.rowIndex="9">
+                           <image>
+                              <Image url="@../images/empty.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="b80" fitHeight="90.0" fitWidth="100.0" onMouseClicked="#mouseEntered" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="8" GridPane.rowIndex="0">
+                           <image>
+                              <Image url="@../images/empty.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="b81" fitHeight="90.0" fitWidth="100.0" onMouseClicked="#mouseEntered" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="8" GridPane.rowIndex="1">
+                           <image>
+                              <Image url="@../images/empty.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="b82" fitHeight="90.0" fitWidth="100.0" onMouseClicked="#mouseEntered" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="8" GridPane.rowIndex="2">
+                           <image>
+                              <Image url="@../images/empty.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="b83" fitHeight="90.0" fitWidth="100.0" onMouseClicked="#mouseEntered" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="8" GridPane.rowIndex="3">
+                           <image>
+                              <Image url="@../images/empty.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="b84" fitHeight="90.0" fitWidth="100.0" onMouseClicked="#mouseEntered" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="8" GridPane.rowIndex="4">
+                           <image>
+                              <Image url="@../images/empty.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="b85" fitHeight="90.0" fitWidth="100.0" onMouseClicked="#mouseEntered" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="8" GridPane.rowIndex="5">
+                           <image>
+                              <Image url="@../images/empty.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="b86" fitHeight="90.0" fitWidth="100.0" onMouseClicked="#mouseEntered" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="8" GridPane.rowIndex="6">
+                           <image>
+                              <Image url="@../images/empty.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="b87" fitHeight="90.0" fitWidth="100.0" onMouseClicked="#mouseEntered" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="8" GridPane.rowIndex="7">
+                           <image>
+                              <Image url="@../images/empty.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="b88" fitHeight="90.0" fitWidth="100.0" onMouseClicked="#mouseEntered" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="8" GridPane.rowIndex="8">
+                           <image>
+                              <Image url="@../images/empty.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="b89" fitHeight="90.0" fitWidth="100.0" onMouseClicked="#mouseEntered" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="8" GridPane.rowIndex="9">
+                           <image>
+                              <Image url="@../images/empty.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="b90" fitHeight="90.0" fitWidth="100.0" onMouseClicked="#mouseEntered" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="9" GridPane.rowIndex="0">
+                           <image>
+                              <Image url="@../images/empty.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="b91" fitHeight="90.0" fitWidth="100.0" onMouseClicked="#mouseEntered" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="9" GridPane.rowIndex="1">
+                           <image>
+                              <Image url="@../images/empty.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="b92" fitHeight="90.0" fitWidth="100.0" onMouseClicked="#mouseEntered" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="9" GridPane.rowIndex="2">
+                           <image>
+                              <Image url="@../images/empty.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="b93" fitHeight="90.0" fitWidth="100.0" onMouseClicked="#mouseEntered" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="9" GridPane.rowIndex="3">
+                           <image>
+                              <Image url="@../images/empty.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="b94" fitHeight="90.0" fitWidth="100.0" onMouseClicked="#mouseEntered" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="9" GridPane.rowIndex="4">
+                           <image>
+                              <Image url="@../images/empty.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="b95" fitHeight="90.0" fitWidth="100.0" onMouseClicked="#mouseEntered" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="9" GridPane.rowIndex="5">
+                           <image>
+                              <Image url="@../images/empty.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="b96" fitHeight="90.0" fitWidth="100.0" onMouseClicked="#mouseEntered" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="9" GridPane.rowIndex="6">
+                           <image>
+                              <Image url="@../images/empty.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="b97" fitHeight="90.0" fitWidth="100.0" onMouseClicked="#mouseEntered" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="9" GridPane.rowIndex="7">
+                           <image>
+                              <Image url="@../images/empty.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="b98" fitHeight="90.0" fitWidth="100.0" onMouseClicked="#mouseEntered" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="9" GridPane.rowIndex="8">
+                           <image>
+                              <Image url="@../images/empty.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="b99" fitHeight="90.0" fitWidth="100.0" onMouseClicked="#mouseEntered" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="9" GridPane.rowIndex="9">
+                           <image>
+                              <Image url="@../images/empty.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </GridPane>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

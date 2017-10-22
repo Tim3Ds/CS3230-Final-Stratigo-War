@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressIndicator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="ScreenAnckor" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: linear-gradient(red, blue);" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.Controller">
+    <children>
+        <Label layoutX="98.0" layoutY="50.0" text="Final Project">
+            <font>
+               <Font size="72.0" />
+            </font>
+         </Label>
+         <Label layoutX="106.0" layoutY="22.0" text="CS-3230 with Peggy Milos">
+            <font>
+               <Font size="33.0" />
+            </font>
+         </Label>
+         <Label layoutX="138.0" layoutY="145.0" text="By: Timothy Kelly">
+            <font>
+               <Font size="37.0" />
+            </font>
+            <textFill>
+               <RadialGradient centerX="0.5" centerY="0.34134615384615385" radius="1.0">
+                  <stops>
+                     <Stop color="#26dbff" />
+                     <Stop color="#660cf5" offset="1.0" />
+                  </stops>
+               </RadialGradient>
+            </textFill>
+            
+         </Label>
+         <Text layoutX="231.0" layoutY="141.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Due By Dec 14, 2016" />
+      <ImageView fx:id="SPcard" fitHeight="150.0" fitWidth="200.0" layoutX="46.0" layoutY="219.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/ace_of_clubs.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="SPflag" fitHeight="150.0" fitWidth="200.0" layoutX="463.0" layoutY="219.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/BLUE/WinnerB.png" />
+         </image>
+      </ImageView>
+      <ProgressIndicator fx:id="Counter" layoutX="203.0" layoutY="219.0" prefHeight="150.0" prefWidth="195.0" progress="0.0" />
+      
+    </children>
+</AnchorPane>

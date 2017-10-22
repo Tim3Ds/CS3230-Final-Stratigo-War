@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="gameofwar">
+  <ClassDiagramComponents>
+    <Class name="GroupOfCards" package="gameofwar" visibility="public" isAbstract="true" xPosition="210.0" yPosition="109.0">
+      <Fields>
+        <Field name="groupOfCards" type="ArrayList&lt;Card&gt;" visibility="private" isFinal="true"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="addCard" returnType="void" visibility="public">
+          <Argument type="Card" name="a"/>
+        </Method>
+        <Method name="removeCard" returnType="void" visibility="public">
+          <Argument type="Card" name="a"/>
+        </Method>
+        <Method name="getCard" returnType="Card" visibility="public">
+          <Argument type="int" name="i"/>
+        </Method>
+        <Method name="getGroupSize" returnType="int" visibility="public"/>
+        <Method name="Shuffle" returnType="void" visibility="public"/>
+        <Method name="orderCards" returnType="void" visibility="public"/>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Deck" package="gameofwar" visibility="public" xPosition="507.0" yPosition="18.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="RandomCard" returnType="Card" visibility="public"/>
+        <Method name="dealCard" returnType="Card" visibility="public"/>
+        <Method name="dealWar" returnType="void" visibility="public">
+          <Argument type="Hand" name="a"/>
+          <Argument type="Hand" name="b"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="GameOFWar" package="gameofwar" visibility="public" xPosition="1021.0" yPosition="54.0">
+      <Fields>
+        <Field name="scan" type="Scanner" visibility="package" isFinal="true"/>
+        <Field name="player1" type="String" visibility="private"/>
+        <Field name="deck" type="Deck" visibility="private"/>
+        <Field name="Winner" type="Hand" visibility="private"/>
+        <Field name="rounds" type="int" visibility="private"/>
+        <Field name="run" type="boolean" visibility="package"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="war" returnType="void" visibility="public" isStatic="true">
+          <Argument type="Hand" name="ha"/>
+          <Argument type="Hand" name="hb"/>
+        </Method>
+        <Method name="war" returnType="void" visibility="private" isStatic="true">
+          <Argument type="Hand" name="ha"/>
+          <Argument type="Hand" name="hb"/>
+          <Argument type="Hand" name="Winner"/>
+        </Method>
+        <Method name="initialize" returnType="void" visibility="public"/>
+        <Method name="play" returnType="void" visibility="public"/>
+        <Method name="displayWinner" returnType="void" visibility="public"/>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Card" package="gameofwar" visibility="public" xPosition="236.0" yPosition="561.0">
+      <Fields>
+        <Field name="rank" type="Rank" visibility="package" isFinal="true"/>
+        <Field name="suit" type="Suit" visibility="package" isFinal="true"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="Rank" name="a"/>
+          <Argument type="Suit" name="b"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="toString" returnType="String" visibility="public"/>
+        <Method name="compareTo" returnType="int" visibility="public">
+          <Argument type="Card" name="a"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Hand" package="gameofwar" visibility="public" xPosition="507.0" yPosition="249.0">
+      <Fields>
+        <Field name="OwnerName" type="String" visibility="private"/>
+        <Field name="discard" type="ArrayList&lt;Card&gt;" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="String" name="whosHand"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getOwner" returnType="String" visibility="public"/>
+        <Method name="SetOwner" returnType="void" visibility="public">
+          <Argument type="String" name="NewOwner"/>
+        </Method>
+        <Method name="playCard" returnType="Card" visibility="public"/>
+        <Method name="toString" returnType="String" visibility="public"/>
+        <Method name="addDiscardPileToHand" returnType="void" visibility="public"/>
+        <Method name="passToDiscardPile" returnType="void" visibility="public">
+          <Argument type="Hand" name="HandWon"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Interface name="Game" package="gameofwar" visibility="public" xPosition="1110.0" yPosition="443.0">
+      <Methods>
+        <Method name="initialize" returnType="void" visibility="public"/>
+        <Method name="play" returnType="void" visibility="public"/>
+        <Method name="displayWinner" returnType="void" visibility="public"/>
+      </Methods>
+    </Interface>
+    <Enum name="Rank" package="gameofwar" visibility="public" xPosition="507.0" yPosition="536.0">
+      <Literals>
+        <Literal name="two"/>
+        <Literal name="three"/>
+        <Literal name="four"/>
+        <Literal name="five"/>
+        <Literal name="six"/>
+        <Literal name="seven"/>
+        <Literal name="eight"/>
+        <Literal name="nine"/>
+        <Literal name="ten"/>
+        <Literal name="Jack"/>
+        <Literal name="Queen"/>
+        <Literal name="King"/>
+        <Literal name="ace"/>
+      </Literals>
+    </Enum>
+    <Enum name="Suit" package="gameofwar" visibility="public" xPosition="23.0" yPosition="584.0">
+      <Literals>
+        <Literal name="Diamond"/>
+        <Literal name="Hearts"/>
+        <Literal name="Spades"/>
+        <Literal name="Clubs"/>
+      </Literals>
+    </Enum>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <HasRelation name="rank" source="gameofwar.Card" target="gameofwar.Rank" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="suit" source="gameofwar.Card" target="gameofwar.Suit" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="deck" source="gameofwar.GameOFWar" target="gameofwar.Deck" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="Winner" source="gameofwar.GameOFWar" target="gameofwar.Hand" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="gameofwar.GameOFWar" target="gameofwar.Game"/>
+    <IsRelation name="is" source="gameofwar.Deck" target="gameofwar.GroupOfCards"/>
+    <HasRelation name="groupOfCards" source="gameofwar.GroupOfCards" target="gameofwar.Card" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;Card&gt;"/>
+    <IsRelation name="is" source="gameofwar.Hand" target="gameofwar.GroupOfCards"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
